@@ -1,0 +1,6 @@
+[MASTER]
+ignore=venv
+load-plugins=pylint_django
+
+[MESSAGES CONTROL]
+disable=C0111,  # Missing docstring

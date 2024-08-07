@@ -1,0 +1,8 @@
+# general
+**/node_modules/*
+public/contrib/*
+coverage/*
+.history
+.vscode
+etc
+cicd

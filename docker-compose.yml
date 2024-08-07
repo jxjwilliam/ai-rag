@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+  backend:
+    build: ./backend
+    ports:
+      - "8000:8000"
+    depends_on:
+      - pinecone
+  frontend:
+    build: ./frontend
+    ports:
+      - "3000:3000"
+  pinecone:
+    image: pinecone:latest
+    ports:
+      - "8100:8100"

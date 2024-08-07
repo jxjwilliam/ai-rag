@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: react-js
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: react-js
+  template:
+    metadata:
+      labels:
+        app: react-js
+    spec:
+      containers:
+        - name: react-js
+          image: your-frontend-image
+          ports:
+            - containerPort: 3000
